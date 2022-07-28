@@ -1,0 +1,92 @@
+body {
+  min-height: 100%;
+  margin: 0 auto;
+  width: 800px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cards {
+  display: flex;
+  height: 100%;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 3px rgba(149, 165, 166, 1);
+  border: 1px solid rgba(149, 165, 166, .05);
+  border-radius: 3px;
+  padding: 10px 10px 5px 10px;
+  width: 225px;
+  height: 100px;
+}
+
+.card:hover {
+  box-shadow: 0 0 5px rgba(149, 165, 166, 1);
+  border: 1px solid rgba(149, 165, 166, .6);
+  background-color: rgba(173, 195, 197, 0.6);
+}
+
+.card-top { display: flex; }
+
+.card-icon {
+  width: 50px;
+  height: 50px;
+  background-image: url("https://img.icons8.com/fluency/344/color-wheel-2.png");
+  background-size: cover;
+}
+
+.msg-icon { background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxwYXRoIGQ9Ik04NiwxNzJjLTQ3LjQ5NjQ5LDAgLTg2LC0zOC41MDM1MSAtODYsLTg2djBjMCwtNDcuNDk2NDkgMzguNTAzNTEsLTg2IDg2LC04NnYwYzQ3LjQ5NjQ5LDAgODYsMzguNTAzNTEgODYsODZ2MGMwLDQ3LjQ5NjQ5IC0zOC41MDM1MSw4NiAtODYsODZ6IiBmaWxsPSIjY2NjY2NjIj48L3BhdGg+PGcgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTg2LDI5LjU4NGMtMzQuNDc2NzIsMCAtNjIuNTc2NzMsMjQuMTU3MDggLTYyLjU3NjczLDU0LjM5MzI5YzAsMTcuNTU3MTkgOS42MDc1NywzMi44NDAwMyAyNC4zODAyNyw0Mi44MTk1N2MtMC4wMjEyNiwwLjU4NDUzIDAuMDIxMjUsMS41NDEwNCAtMC43NTQ1OCw0LjM4OTNjLTAuOTQ1ODgsMy41MzkwNyAtMi44ODAxNSw4LjUxMjkgLTYuNzkxMTksMTQuMTI0NGwtMi43ODQ0OSwzLjk4NTQ0aDQuODU2OTJjMTYuODQ1MTMsMCAyNi41OTA4NiwtMTAuOTc4NTYgMjguMTAwMDEsLTEyLjc0Mjc4YzUuMDE2MzQsMS4xNzk2OSAxMC4xODE0NywxLjgyNzk5IDE1LjU2OTc5LDEuODI3OTljMzQuNDc2NzIsMCA2Mi41NzY3MywtMjQuMTU3MDggNjIuNTc2NzMsLTU0LjQwMzkyYzAsLTMwLjIzNjIxIC0yOC4xMDAwMSwtNTQuMzkzMjkgLTYyLjU3NjczLC01NC4zOTMyOXoiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg=="); }
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin: 0 auto;
+}
+
+.card-content div:not(:first-child) {color: #95A5A6;} /*skips 1st div*/
+
+.card-content div:first-child {
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.card-content div:last-child {
+  width: 135px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 0;
+  width: 95%;
+  align-self: center;
+  color: #95A5A6
+}
+
+.card-bottom div:last-child {
+  width: 15px;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9Im5vbnplcm8iIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2UtbGluZWNhcD0iYnV0dCIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtZGFzaGFycmF5PSIiIHN0cm9rZS1kYXNob2Zmc2V0PSIwIiBmb250LWZhbWlseT0ibm9uZSIgZm9udC13ZWlnaHQ9Im5vbmUiIGZvbnQtc2l6ZT0ibm9uZSIgdGV4dC1hbmNob3I9Im5vbmUiIHN0eWxlPSJtaXgtYmxlbmQtbW9kZTogbm9ybWFsIj48cGF0aCBkPSJNMCwxNzJ2LTE3MmgxNzJ2MTcyeiIgZmlsbD0ibm9uZSI+PC9wYXRoPjxnIGlkPSJvcmlnaW5hbC1pY29uIiBmaWxsPSIjOTVhNWE2Ij48cGF0aCBkPSJNODYsMjAuOTk2MDlsLTUwLjY3MDU3LDUwLjY3MDU3bDEwLjc1LDEwLjc1bDMyLjc1MzkxLC0zMi43NTM5MXYxMDAuODM3MjRoMTQuMzMzMzN2LTEwMC44MzcyNGwzMi43NTM5LDMyLjc1MzkxbDEwLjc1LC0xMC43NXoiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg==");
+  background-size: cover;
+  transform: rotate(33deg);
+}
+
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .card { margin: 8px; }
+}
